@@ -226,7 +226,7 @@ fieldset.embedded legend {
 }
 
 /* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
-
+/*
 input:invalid, select:invalid, textarea:invalid {
   background: #fff3f3;
   border-color: #f78d00;
@@ -237,7 +237,7 @@ input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
   -moz-box-shadow: 0 0 0.5em #ffaaaa;
   -webkit-box-shadow: 0 0 0.5em #ffaaaa;
   box-shadow: 0 0 0.5em #ffaaaa;
-}
+}*/
 
 /* TABLES */
 
@@ -1967,7 +1967,7 @@ span.textLogo {
 
 .cierralo-row-one {
   margin-bottom: 30px;
-  margin-left: 140px;
+  margin-left: 111px;
   align-items: flex-start !important;
   margin-top: 41px;
 }
