@@ -51,7 +51,7 @@
         <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer hover-btn-orange-lighter" id="navbarRegister">Regístrate</button>
       </a>
     </li>
-    <li class="cierralo-font-helveltica-medium">
+    <li class="cierralo-font-helveltica-medium" style="display: none;">
       <a class="no-padding-top">
         <button class="cierralo-font-helveltica-neue cierralo-contact-navbar-btn cierralo-btn-secondary cursor-pointer hover-btn-orange" id="navbarContact">Contacto</button>
       </a>
@@ -89,7 +89,7 @@
   <li class="item-mobile-menu" data-preventclose="">
     <a class="cierralo-font-helveltica-neue" href="http://cierralo.com/#!/buildings">Departamentos</a>
   </li>
-  <li class="item-mobile-menu" data-preventclose="">
+  <li class="item-mobile-menu" data-preventclose="" style="display: none;">
     <a class="cierralo-font-helveltica-neue">Contacto</a>
   </li>
   <li class="item-mobile-menu mg-super" data-preventclose="">
