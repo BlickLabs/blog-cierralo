@@ -28,7 +28,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <?php
 endif;
 ?>
-  <div>
+  <div class="newsletter-banner-container">
     <div class="newsletter-banner">
       <p class="newsLetter-banner-text cierralo-font-helveltica-bold">
         Suscríbete a nuestro Newsletter
@@ -40,7 +40,9 @@ endif;
       </div>
     </form>
   </div>
-  <div class="cierralo-sidebar-separator"></div>
+  <div class="cierralo-sidebar-separator-container">
+    <div class="cierralo-sidebar-separator"></div>
+  </div>
   <?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->
 
