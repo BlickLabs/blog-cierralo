@@ -100,7 +100,7 @@ function shoreditch_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget widget-small %2$s cierralo-font-helveltica-neue">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title cierralo-font-helveltica-neue">',
+		'before_title'  => '<h2 class="widget-title cierralo-font-helveltica-bold">',
 		'after_title'   => '</h2>',
 	) );
 
