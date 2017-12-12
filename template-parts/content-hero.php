@@ -18,8 +18,8 @@ if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
   <?php
     shoreditch_entry_meta();
 
-    the_title( '<h1 class="entry-title cierralo-entry-title-hero cierralo-font-helveltica-neue">', '</h1>' );
+    the_title( '<h1 class="entry-title cierralo-entry-title-hero cierralo-font-helveltica-bold">', '</h1>' );
   ?>
-  <h3 class="author-name cierrarlo-author-info cierralo-font-helveltica-neue-light">Posted by <span class="cierralo-author-info-orange"><?php echo get_the_author(); ?></span> on <?php echo the_date('d/m/Y'); ?> <?php echo get_the_time('g:i')?></h3>
+  <h3 class="author-name cierrarlo-author-info cierralo-font-helveltica-neue">Posted by <span class="cierralo-author-info-orange"><?php echo get_the_author(); ?></span> on <?php echo the_date('d/m/Y'); ?> <?php echo get_the_time('g:i')?></h3>
   <div class="cierralo-entry-hero-wrapper-separator"></div>
 </div><!-- .entry-hero-wrapper -->
