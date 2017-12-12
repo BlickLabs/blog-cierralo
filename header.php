@@ -33,21 +33,21 @@
       <span class="hamburger-inner" data-navbar="navbar"></span>
     </span>
   </button>
-  <a class="navbar-brand" href="">
+  <a class="navbar-brand" href="http://cierralo.com/#!/homepage">
     <img class="fitLogo" id="fit-logo" src="<?php echo get_template_directory_uri() . '/img/logos/cierralo-fit-logo.png'?>"/>
   </a>
   <ul class="nav navbar-nav navbar-right hide-onMobile cierralo-font-helveltica-neue">
     <li class="cierralo-font-helveltica-neue cierralo-purplish-grey">
-      <a href="">Departamentos</a>
+      <a href="http://cierralo.com/#!/buildings">Departamentos</a>
     </li>
     <li>
-      <a class="cierralo-font-helveltica-neue" href="">¿Cómo funciona?</a>
+      <a class="cierralo-font-helveltica-neue" href="http://cierralo.com/#!/como-funciona">¿Cómo funciona?</a>
     </li>
     <li class="cierralo-font-helveltica-neue cierralo-purplish-grey">
-      <a href="">Inicia sesión</a>
+      <a href="http://cierralo.com/#!/login">Inicia sesión</a>
     </li>
     <li class="cierralo-font-helveltica-medium">
-      <a class="no-padding-top" href="">
+      <a class="no-padding-top" href="http://cierralo.com/#!/register">
         <button class="cierralo-font-helveltica-neue cierralo-register-navbar-btn cierralo-btn-secondary cursor-pointer hover-btn-orange-lighter" id="navbarRegister">Regístrate</button>
       </a>
     </li>
@@ -73,6 +73,36 @@
   </ul>
 </nav>
 
+<ul id="mobileMenu" data-preventclose="li" style="display:none; margin-top: 0;">
+  <li class="item-mobile-menu mg-logo" data-preventclose="">
+    <a href="http://cierralo.com/#!/homepage" data-preventclose="">
+      <img src="<?php echo get_template_directory_uri() . '/img/logos/cierralo-white-logo.png' ?>" alt="Logo Cíerralo" data-preventclose=""/>
+    </a>
+  </li>
+  
+  <li class="item-mobile-menu" data-preventclose="">
+    <a class="cierralo-font-helveltica-neue" href="http://cierralo.com/#!/homepage">Inicio</a>
+  </li>
+  <li class="item-mobile-menu" data-preventclose="">
+    <a class="cierralo-font-helveltica-neue" href="http://cierralo.com/#!/como-funciona">¿Cómo funciona?</a>
+  </li>
+  <li class="item-mobile-menu" data-preventclose="">
+    <a class="cierralo-font-helveltica-neue" href="http://cierralo.com/#!/buildings">Departamentos</a>
+  </li>
+  <li class="item-mobile-menu" data-preventclose="">
+    <a class="cierralo-font-helveltica-neue">Contacto</a>
+  </li>
+  <li class="item-mobile-menu mg-super" data-preventclose="">
+    <a class="cierralo-font-helveltica-neue" href="http://cierralo.com/#!/register">Registro</a>
+  </li>
+  <li class="item-mobile-menu" data-preventclose="">
+    <a class="cierralo-font-helveltica-neue" href="http://cierralo.com/#!/termsConditions">Términos y condiciones</a>
+  </li>
+  <li class="item-mobile-menu" data-preventclose="">
+    <a class="cierralo-font-helveltica-neue" href="http://cierralo.com/#!/privacyNotice">Aviso de privacidad</a>
+  </li>
+</ul>
+
 	<div id="content" class="site-content">
     <?php if ( get_header_image() ) : ?>
       <div class="header-image">
@@ -81,3 +111,17 @@
         </a>
       </div><!-- .header-image -->
     <?php endif; // End header image check. ?>
+
+<script>
+  window.addEventListener('touchstart', function (event) {
+    var mobileMenu = document.getElementById("mobileMenu");
+    if (event.target.dataset.navbar) {
+      setTimeout(function(){ mobileMenu.style.width = "80%"; mobileMenu.style.display = "list-item";}, 100);
+    }
+    if (!event.target.dataset.preventclose) {
+      if (!event.target.dataset.navbar){
+        mobileMenu.style.width = "0";
+      }
+    }
+  });
+</script>
