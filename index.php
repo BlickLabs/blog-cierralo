@@ -20,7 +20,7 @@ get_header(); ?>
 		get_template_part( 'featured-content' );
 	}
 	?>
-
+	<div class="cierralo-site-content-background-cover"></div>
 	<div class="site-content-wrapper">
 
 		<div id="primary" class="content-area">
