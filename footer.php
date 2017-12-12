@@ -29,7 +29,9 @@
           <div class="cierralo-adjust-footer">
             <ul class="cierralo-footer-list">
               <li class="cursor-pointer">Contacto</li>
-              <li class="cursor-pointer">Preguntas Frecuentes</li>
+              <a href="http://cierralo.com/#!/faq" style="color: #9b9b9b; outline: 0;">
+                <li class="cursor-pointer">Preguntas Frecuentes</li>
+              </a>
               <!--<li class="cursor-pointer">Acerca de nosotros</li>-->
             </ul>
             <ul class="cierralo-footer-list">
@@ -47,7 +49,7 @@
             </ul>
           </div>
           <div class="cierralo-footer-right">
-            <a href="">
+            <a href="http://cierralo.com/#!/register">
               <button class="cierralo-font-helveltica-medium cierralo-default-btn cierralo-btn-secondary cierralo-remove-margin cursor-pointer hover-btn-orange">Regístrate</button>
             </a>
           </div>
@@ -55,10 +57,10 @@
         <div class="cierralo-footer-divider cierralo-flex-row"></div>
         <div class="cierralo-footer-last-text cierralo-flex-row terms-text-size">
           <div>
-            <a class="cierralo-phone" target="_blank" href=""> Términos y condiciones</a>
+            <a class="cierralo-phone" target="_blank" href="http://cierralo.com/#!/termsConditions"> Términos y condiciones</a>
           </div>
           <div>
-            <a class="cierralo-phone" target="_blank" href=""> Aviso de privacidad</a>
+            <a class="cierralo-phone" target="_blank" href="http://cierralo.com/#!/privacyNotice"> Aviso de privacidad</a>
           </div>
         </div>
       </div>
