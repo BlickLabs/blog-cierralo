@@ -35,8 +35,11 @@ endif;
       </p>
     </div>
     <form class="form footer_form" onsubmit="sendNewsletterEmail(); return false;" id='getEmailByPerson'>
-      <div class="input_text">
+      <div class="cierralo-form-content">
         <input required type="form_sub" class="suscribe form-control1 cierralo-font-helveltica-neue" id="correo" placeholder="Correo electrónico">
+        <div>
+          <input class="cierralo-newsletter-submit cierralo-font-helveltica-neue" type="submit" name="" value="Suscribirse">
+        </div>
       </div>
     </form>
   </div>
