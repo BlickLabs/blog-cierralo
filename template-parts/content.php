@@ -27,7 +27,7 @@
 		</header><!-- .entry-header -->
 		<div class="entry-header-wrapper cierralo-entry-header-wrapper">
 <?php
-	the_title( '<h2 class="entry-title cierralo-font-helveltica-neue"><a class="cierralo-entry-title" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+	the_title( '<h2 class="entry-title cierralo-font-helveltica-bold"><a class="cierralo-entry-title" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
  ?>
 		</div><!-- .entry-header-wrapper -->
 	<?php
@@ -44,7 +44,7 @@
 	?>
 
 
-		<div class="entry-content cierralo-entry-content">
+		<div class="entry-content cierralo-entry-content cierralo-font-helveltica-neue">
 			<?php
 			if ( is_single() ) {
 				the_content( sprintf(
