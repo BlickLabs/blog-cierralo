@@ -296,10 +296,12 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 
 .cierralo-font-helveltica-neue {
   font-family: 'HelveticaNeue';
+  font-weight: normal;
 }
 
 .cierralo-font-helveltica-bold {
   font-family: 'HelveticaNeue-bold';
+  font-weight: normal;
 }
 
 .cierralo-font-helveltica-neue-light {
@@ -365,6 +367,14 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 /*--------------------------------------------------------------
 # Ciérralo base styles
 --------------------------------------------------------------*/
+.cierralo-site-content-background-cover{
+  background: url("img/backgrounds/blog-cover.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 332px;
+  width: 100%;
+}
 
 .cierralo-btn-secondary {
   background-color: #e66700;
@@ -424,6 +434,8 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 }
 
 .cierralo-article:first-child {
+  border-bottom: solid 1px #d6d6d6 !important;
+  padding-bottom: 36px !important;
   width: 100% !important;
 }
 
@@ -495,6 +507,32 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
   .cierralo-article {
     width: 100% !important;
   }
+
+  .cierralo-site-content-background-cover {
+    height: 150px;
+    margin-bottom: 40px;
+  }
+
+  .entry-hero-wrapper.cierralo-entry-hero-wrapper {
+    padding-left: 0;
+    padding-top: 50px
+  }
+
+  .cierralo-sidebar-separator-container {
+    margin: 0 auto;
+    width: 229px;
+  }
+
+  .newsletter-banner-container {
+    margin: 0 auto;
+    width: 229px;
+  }
+
+  .widget_recent_entries {
+    margin: 0 auto !important;
+    padding-right: 0;
+    width: 229px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -506,20 +544,26 @@ html {
 	-ms-text-size-adjust:     100%;
 }
 .suscribe {
-  height: 42px;
+  height: 47px;
   padding: 13px 77px 13px 19px;
   font-size: 14px;
-  border: .5px solid #fff;
-  border-radius: 6px;
+  border: none;
   width: 229px;
   min-width: 219px;
-  color: #b0bec5;
+  color: #757176;
   margin-top: 20px;
+  box-shadow: inset 0 0 0 1px #e6e6e6;
 }
 
+.suscribe::placeholder {
+  color: #AAAAAA;
+}
+
+/*
 input.suscribe:focus {
     outline: 0px solid #ed7161 !important;
-}
+}*/
+
 body {
 	font-family: 'Futura-Std-Book';
 	margin: 0;
@@ -777,7 +821,7 @@ h5,
 h6,
 .site-title {
 	clear: both;
-	color: #2c313f;
+  color: #757176;
 	font-weight: bold;
 	margin: 0 0 1.5rem;
 }
@@ -812,7 +856,7 @@ h1,
 .post-type-archive-jetpack-testimonial .page-title {
 	color: #343434;
 	font-size: 30px !important;
-	line-height: 1.2;
+	line-height: 22px;
 	font-family: 'FuturaStd-Heavy';
 }
 
@@ -820,37 +864,36 @@ h2,
 .comment-reply-title,
 .comments-title {
 	font-size: 32px;
-	font-size: 2rem;
+	font-size: 1.25rem;
 	line-height: 1.125;
+  color: #757176;
 }
 
 h3,
 .page-title,
 .widgettitle, {
-	font-size: 25px;
-	font-size: 1.5625rem;
-	line-height: 1.2;
-	font-family: 'Futura-Std';
-	color: #ed7161;
+	font-size: 1.25rem;
+    line-height: 1.125;
+    color: #757176;
 }
 
 h4,
 .site-title {
-	font-size: 20px;
 	font-size: 1.25rem;
-	line-height: 1.5;
+    line-height: 1.125;
+    color: #757176;
 }
 
 h5 {
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
+	font-size: 1.25rem;
+    line-height: 1.125;
+    color: #757176;
 }
 
 h6 {
-	font-size: 13px;
-	font-size: 0.8125rem;
-	line-height: 1.3847;
+	font-size: 1.25rem;
+    line-height: 1.125;
+    color: #757176;
 }
 
 dfn,
@@ -1825,7 +1868,7 @@ a {
 }
 
 #content {
-	margin-top: 60px;
+	margin-top: 14px;
 }
 
 #content[tabindex="-1"]:focus {
@@ -2041,7 +2084,7 @@ a {
 
 .hentry {
 	border-bottom: 1px solid #f3f3f3;
-	margin: 0 0 1.5em;
+	/*margin: 0 0 1.5em;*/
 	padding-top: 1.5em;
 }
 
@@ -4248,10 +4291,10 @@ aside.widget-area {
 	h2,
 	.comment-reply-title,
 	.comments-title {
-		font-size: 40px;
-		font-size: 2.5rem;
+		font-size: 1.25rem;
 		line-height: 1.125;
-	}
+    color: #757176;
+	}/*EDIT TO BLOG CIERRALO*/
 
 	.widget-small h2 {
 		font-size: 32px;
@@ -4262,9 +4305,9 @@ aside.widget-area {
 	h3,
 	.page-title,
 	.widgettitle, {
-		font-size: 32px;
-		font-size: 2rem;
-		line-height: 1.1719;
+		font-size: 1.25rem;
+    line-height: 1.125;
+    color: #757176;
 	}
 
 	.widget-small h3,
@@ -4276,9 +4319,9 @@ aside.widget-area {
 
 	h4,
 	.site-title {
-		font-size: 25px;
-		font-size: 1.5625rem;
-		line-height: 1.2;
+		font-size: 1.25rem;
+    line-height: 1.125;
+    color: #757176;
 	}
 
 	.widget-small h4 {
@@ -4288,9 +4331,9 @@ aside.widget-area {
 	}
 
 	h5 {
-		font-size: 20px;
 		font-size: 1.25rem;
-		line-height: 1.5;
+    line-height: 1.125;
+    color: #757176;
 	}
 
 	.widget-small h5 {
@@ -4300,9 +4343,9 @@ aside.widget-area {
 	}
 
 	h6 {
-		font-size: 16px;
-		font-size: 1rem;
-		line-height: 1.40625;
+		font-size: 1.25rem;
+    line-height: 1.125;
+    color: #757176;
 	}
 
 	.widget-small h6 {
