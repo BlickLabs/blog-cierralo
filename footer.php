@@ -28,7 +28,7 @@
           </div>
           <div class="cierralo-adjust-footer">
             <ul class="cierralo-footer-list">
-              <li class="cursor-pointer">Contacto</li>
+              <li class="cursor-pointer" style="display: none;">Contacto</li>
               <a href="http://cierralo.com/#!/faq" style="color: #9b9b9b; outline: 0;">
                 <li class="cursor-pointer">Preguntas Frecuentes</li>
               </a>
