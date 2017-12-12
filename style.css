@@ -412,10 +412,15 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 .cierralo-entry-title {
   color: #757176;
   font-size: 1.1875rem;
+  white-space: nowrap;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .cierralo-entry-header-wrapper {
   padding: 29px 0 20px 0;
+  width: 100% !important;
 }
 
 .site-content-wrapper .has-post-thumbnail .entry-header.cierralo-entry-header {
@@ -496,6 +501,22 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 .cierralo-widget-area-single-post {
   margin-top: -105px;
   padding-top: 0 !important;
+}
+
+.cierralo-form-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cierralo-form-content .cierralo-newsletter-submit {
+  background-color: #e66700;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 15px;
+  height: 39px;
+  margin-top: 20px;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 896px) {
