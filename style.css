@@ -310,6 +310,7 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 
 .cierralo-font-helveltica-medium {
   font-family: 'HelveticaNeue-Medium';
+  font-weight: 500;
 }
 
 .cierralo-font-helveltica-thin {
@@ -367,6 +368,13 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 /*--------------------------------------------------------------
 # Ciérralo base styles
 --------------------------------------------------------------*/
+.cierralo-site-title {
+  color: #757176;
+  font-size: 25px;
+  margin: 0;
+  text-align: center;
+}
+
 .cierralo-site-content-background-cover{
   background: url("img/backgrounds/blog-cover.jpg");
   background-position: bottom;
@@ -439,8 +447,7 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
 }
 
 .cierralo-article:first-child {
-  border-bottom: solid 1px #d6d6d6 !important;
-  padding-bottom: 36px !important;
+  padding-top: 53px !important;
   width: 100% !important;
 }
 
@@ -525,6 +532,11 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
   transition: background-color 0.6s
 }
 
+article:first-child > .cierralo-hentry-wrapper-modifier {
+  border-bottom: solid 1px #d6d6d6 !important;
+  padding-bottom: 36px !important;
+}
+
 @media screen and (max-width: 896px) {
   .widget-area-mobile {
     margin-top: 0;
@@ -560,6 +572,11 @@ Tags: blue, white, light, two-columns, right-sidebar, responsive-layout, custom-
     padding-right: 0;
     width: 229px;
   }
+
+  article:first-child > .cierralo-hentry-wrapper-modifier {
+    padding-bottom: 0 !important;
+    border-bottom: solid 0px !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -574,12 +591,12 @@ html {
   height: 47px;
   padding: 13px 77px 13px 19px;
   font-size: 14px;
-  border: none;
+  border: solid 1px #eeeeee;
   width: 229px;
   min-width: 219px;
   color: #757176;
   margin-top: 20px;
-  box-shadow: inset 0 0 0 1px #e6e6e6;
+  /*box-shadow: inset 0 0 0 1px #e6e6e6;*/
 }
 
 .suscribe::placeholder {
@@ -5042,7 +5059,7 @@ aside.widget-area {
 	}
 
 	.blog .content-area {
-		padding-top: 1.5em;
+		padding-top: 3em;
 	}
 
 	.archive .content-area,
@@ -5557,7 +5574,7 @@ aside.widget-area {
 
 	.site-content-wrapper .widget-area {
 		padding-bottom: 3.75em;
-		padding-top: 6em;
+		padding-top: 7.5em;
 	}
 
 	/* Navigation */
