@@ -32,6 +32,9 @@
               <a href="http://cierralo.com/#!/faq" style="color: #9b9b9b; outline: 0;">
                 <li class="cursor-pointer">Preguntas Frecuentes</li>
               </a>
+              <a href="http://blog.cierralo.com.mx/" target="_blank" style="color: #9b9b9b; outline: 0;">
+                <li class="cursor-pointer">Blog</li>
+              </a>
               <!--<li class="cursor-pointer">Acerca de nosotros</li>-->
             </ul>
             <ul class="cierralo-footer-list">
